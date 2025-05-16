@@ -1,0 +1,36 @@
+:root {
+  --primary-colour: #9bbb6b;
+  --secondary-colour: #f49ac0;
+  --heading_font: "Merriweather", serif;
+}
+
+.logo {
+  font-size: 28px;
+  font-family: var(--heading_font);
+  color: var(--primary-colour);
+  text-decoration: none;
+}
+.logo:hover {
+  text-decoration: none;
+  border-bottom: none;
+}
+nav {
+  padding: 20px 0;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  display: inline;
+  line-height: 30px;
+  margin-left: 30px;
+  list-style: none;
+}
+nav a {
+  color: var(--primary-colour);
+  text-decoration: none;
+}
+nav a:hover {
+  color: var(--secondary-colour);
+}
