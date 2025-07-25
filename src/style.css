@@ -1,36 +1,64 @@
 :root {
-  --primary-colour: #9bbb6b;
-  --secondary-colour: #f49ac0;
-  --heading_font: "Merriweather", serif;
+  --primary-colour: #3e6500;
+  --secondary-colour: #fc8586;
+  --primary_font: "Fredoka", sans-serif;
 }
 
+body {
+  background-color: #fcfdf2;
+  font-family: var(--primary_font);
+}
+.container {
+  max-width: 960px;
+}
 .logo {
-  font-size: 28px;
-  font-family: var(--heading_font);
-  color: var(--primary-colour);
-  text-decoration: none;
+  max-height: 240px;
+  transition: transform 0.3s ease-in-out;
 }
 .logo:hover {
-  text-decoration: none;
-  border-bottom: none;
+  animation: swing 1s ease-in-out;
+}
+
+@keyframes swing {
+  20% {
+    transform: rotate(16deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 nav {
-  padding: 20px 0;
+  padding: 0;
 }
 nav ul {
-  margin: 0;
+  margin-top: 80px;
   padding: 0;
 }
 nav li {
   display: inline;
-  line-height: 30px;
+  font-size: 20px;
   margin-left: 30px;
+  line-height: 30px;
   list-style: none;
 }
 nav a {
   color: var(--primary-colour);
   text-decoration: none;
+  transition: all 100ms ease-in-out;
 }
 nav a:hover {
   color: var(--secondary-colour);
+}
+h1 {
+  color: #c8d7a9;
+  text-align: center;
 }
