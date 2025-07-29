@@ -1,18 +1,20 @@
 :root {
   --primary-colour: #3e6500;
-  --secondary-colour: #fc8586;
-  --primary_font: "Fredoka", sans-serif;
+  --secondary-colour: #c8d7a9;
+  --accent-colour: #fc8586;
+  --primary-font: "Fredoka", sans-serif;
+  --secondary-font: "Gaegu", sans-serif;
 }
 
 body {
-  background-color: #fcfdf2;
-  font-family: var(--primary_font);
+  background-color: #fdfeef;
 }
 .container {
   max-width: 960px;
 }
 .logo {
-  max-height: 240px;
+  max-height: 200px;
+  padding-bottom: 40px;
   transition: transform 0.3s ease-in-out;
 }
 .logo:hover {
@@ -37,6 +39,8 @@ body {
   }
 }
 nav {
+  font-size: 20px;
+  font-family: var(--primary-font);
   padding: 0;
 }
 nav ul {
@@ -45,7 +49,6 @@ nav ul {
 }
 nav li {
   display: inline;
-  font-size: 20px;
   margin-left: 30px;
   line-height: 30px;
   list-style: none;
@@ -53,12 +56,20 @@ nav li {
 nav a {
   color: var(--primary-colour);
   text-decoration: none;
-  transition: all 100ms ease-in-out;
+  transition: all 150ms ease-in-out;
 }
 nav a:hover {
-  color: var(--secondary-colour);
+  color: var(--accent-colour);
+}
+section {
+  background-color: #3e6500;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 60px;
 }
 h1 {
-  color: #c8d7a9;
+  color: #fdfeef;
+  font-family: var(--secondary-font);
+  font-weight: bold;
   text-align: center;
 }
